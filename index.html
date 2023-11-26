@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Eindopracht Week 6</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='styles/style.css'>
+  </head>
+
+  <body>
+    <nav>
+      <img class="nav_logo" src="images/moon_logo.png" alt="">
+      <div class="links_nav">
+        <a href="#about">About Us</a>
+        <a href="#games">Games</a>
+        <a href="#signup">Sign-Up</a>
+      </div>
+    </nav>
+
+    <header id="about">
+      <h2 class="head_section_title">Crescent Moon Studios | We make games because we love doing it.</h2>
+      <p class="head_section_text">
+        We here at Crescent Moon Studios value time and effort being put into our creations; whether it be our games, guides, or any of our various other products- We try our BEST to create something truly enjoyable. Honesty is key, and we love being transparent with our players and customers.
+        <br><br>
+        We hope we bring enjoyable experiences to people around the world. Check us out!
+      </p>
+      <div class="header_buttons">
+        <button onclick="window.open('https://dzenith.itch.io/')">Our Catalogue</button>
+        <button onclick="window.open('https://dzenith.itch.io/the-diner')">Newest Release</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="products" id="games">
+        <h1>Check Out Our Games!</h1>
+        <div class="our_products">
+          <article>
+            <div>
+              <img src="images/FALLEN_SPIRIT_CARD.png" class="prod_img">
+              <h3>The Fallen Spirits (Steam & Itch.io)</h3>
+              <p class="stars">★ ★ ★ ★ ★</p>
+              <p>There are talks between kingdoms, of a curse spreading like a wildfire. Many soldiers, workers, and civilians alike ventured into the forest to investigate for themselves, only to never be seen again. What will become of the kingdom?</p>
+            </div>
+            <button onclick="window.open('https://store.steampowered.com/app/2356790/The_Forgotten_Tapes_Twisted_Forms/')">Store Page</button>
+          </article>
+          <article>
+            <div>
+              <img src="images/distort_2.png" class="prod_img">
+              <h3>Bobo's Quest (Steam & Itch.io)</h3>
+              <p class="stars">★ ★ ★ ★ ★</p>
+              <p>After finding an old tape recording of an unfinished game your grandfather used to work on before his mysterious disappearance, you decide to take a peek at 'Bobo's Quest'. Though you soon find out that things aren't what they seem.</p>
+            </div>
+            <button onclick="window.open('//store.steampowered.com/app/2239000/The_Forgotten_Tapes_Analog_Nightmares/')">Store Page</button>
+          </article>
+          <article>
+            <div>
+              <img src="images/TF.png" class="prod_img">
+              <h3>The Father | Original (Itch.io)</h3>
+              <p class="stars">★ ★ ★ ☆ ☆</p>
+              <p>'The Father' is a very short horror adaptation of Jadusable's popular creepypasta: Ben Drowned. It takes the already existing story of the Haunted Cartridge and the Awakening Arc and gives it it's own twist. There are two endings achievable.</p>
+            </div>
+            <button onclick="window.open('https://dzenith.itch.io/the-father')">Store Page</button>
+          </article>
+        </div>
+      </section>
+  
+      <section class="form_field_full" id="signup">
+        <h1>Sign up today and come work with us!</h1>
+        <form action="/action_page.php">
+          <div class="formfield">
+            <div class="formfieldrow">
+              <label for="firstname">First Name *</label>
+              <input type="text" name="firstname" id="firstname" placeholder="example: 'John'" required="">
+            </div>
+            <div class="formfieldrow">
+              <label for="lastname">Surname *</label>
+              <input type="text" name="lastname" id="lastname" placeholder="example: 'Doe'" required="">
+            </div>
+          </div>
+          <div class="formfieldrow">
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email" placeholder="example: 'plugwalk@gmail.com'" required="">
+          </div>
+          <div class="formfield">
+            <div class="formfieldrow">
+              <label for="res">Place Of Residence*</label>
+              <input type="text" name="res" id="res" placeholder="example: 'The Netherlands'" required="">
+            </div>
+            <div class="formfieldrow">
+              <label for="birthdate">Date of Birth *</label>
+              <input type="date" name="birthdate" id="birthdate" required="">
+            </div>
+          </div>
+          <div class="formfieldrow">
+            <label for="subject">Job Type *</label>
+              <select id="subject" name="subject" required="">
+                <option value="" disabled="">Choose a position.</option>
+                <option value="1">Game Developer</option>
+                <option value="2">Game Designer</option>
+                <option value="0">Video Editor</option>
+                <option value="3">Guide Writer</option>
+              </select>
+          </div>
+          <div class="formfieldrow">
+              <label for="message">Message *</label>
+              <textarea name="message" rows="7" required=""></textarea>
+          </div>
+          <label for="newsletter">Do you want to keep up with our newsletter? *</label>
+          <div class="newsletter">
+              <input type="radio" id="ja" name="newsletter" value="1" required="">
+              <label for="yes">Yes!</label>
+              <input type="radio" id="nee" name="newsletter" value="2" required="">
+              <label for="no">Nope!</label>
+          </div>
+          <div>
+              <input type="checkbox" id="agreed" name="agreed" value="agreed" required="">
+              <label for="agreed">I agree with the Terms of Service.</label>
+          </div>
+          <button type="submit">Send Message.</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © Crescent Moon Studios 2023</p>
+      <div class="links_footer">
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Contact</a>
+      </div>
+    </footer>
+  </body>
+
+</html>
